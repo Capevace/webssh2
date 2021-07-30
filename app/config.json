@@ -4,11 +4,11 @@
     "port": 3003
   },
   "http": {
-    "origins": ["datenregal.local:3003", "cloud.mateffy.me:80", "cloud.mateffy.me:443"]
+    "origins": ["datenregal:2222", "cloud.mateffy.me:80", "cloud.mateffy.me:443"]
   },
   "user": {
     "name": "mat",
-    "password": "",
+    "password": "rnsvwUzrUY#vM@8H&RrN3J_iL~S/wx]5",
     "privatekey": null,
     "overridebasic": true
   },
