@@ -1,0 +1,80 @@
+{
+  "listen": {
+    "ip": "0.0.0.0",
+    "port": 3003
+  },
+  "http": {
+    "origins": ["datenregal.local:3003", "cloud.mateffy.me:80", "cloud.mateffy.me:443"]
+  },
+  "user": {
+    "name": "mat",
+    "password": "",
+    "privatekey": null,
+    "overridebasic": true
+  },
+  "ssh": {
+    "host": "localhost",
+    "port": 22,
+    "localAddress": null,
+    "localPort": null,
+    "term": "xterm-color",
+    "readyTimeout": 20000,
+    "keepaliveInterval": 120000,
+    "keepaliveCountMax": 10,
+    "allowedSubnets": ["127.0.0.0/8"]
+  },
+  "terminal": {
+    "cursorBlink": true,
+    "scrollback": 10000,
+    "tabStopWidth": 8,
+    "bellStyle": "sound"
+  },
+  "header": {
+    "text": null,
+    "background": "green"
+  },
+  "session": {
+    "name": "webssh2",
+    "secret": "-bL)5d~u7::2fprp(dT^w;f4}o&q*W5+X?SqOyn_O/,e4x^UUwq4/K]>PWn+=3E:QGNB^=/"
+  },
+  "options": {
+    "challengeButton": false,
+    "allowreauth": false
+  },
+  "algorithms": {
+    "kex": [
+      "ecdh-sha2-nistp256",
+      "ecdh-sha2-nistp384",
+      "ecdh-sha2-nistp521",
+      "diffie-hellman-group-exchange-sha256",
+      "diffie-hellman-group14-sha1"
+    ],
+    "cipher": [
+      "aes128-ctr",
+      "aes192-ctr",
+      "aes256-ctr",
+      "aes128-gcm",
+      "aes128-gcm@openssh.com",
+      "aes256-gcm",
+      "aes256-gcm@openssh.com",
+      "aes256-cbc"
+    ],
+    "hmac": [
+      "hmac-sha2-256",
+      "hmac-sha2-512",
+      "hmac-sha1"
+    ],
+    "compress": [
+      "none",
+      "zlib@openssh.com",
+      "zlib"
+    ]
+  },
+  "serverlog": {
+    "client": false,
+    "server": false
+  },
+  "accesslog": false,
+  "verify": false,
+  "safeShutdownDuration": 300
+}
