@@ -30,7 +30,7 @@ let logDate: {
 let currentDate: Date;
 let myFile: string;
 let errorExists: boolean;
-const term = new Terminal({ fontFamily: 'Jetbrains Mono', lineHeight: 1.1, letterSpacing: -1 });
+const term = new Terminal({ fontFamily: 'Jetbrains Mono', lineHeight: 1.1, letterSpacing: -1.1 });
 // DOM properties
 const logBtn = document.getElementById('logBtn');
 const credentialsBtn = document.getElementById('credentialsBtn');
